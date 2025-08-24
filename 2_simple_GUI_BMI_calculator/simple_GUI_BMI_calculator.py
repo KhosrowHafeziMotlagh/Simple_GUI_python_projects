@@ -24,15 +24,15 @@ heghit_inp = StringVar()                                                        
 main_form.title("simple GUI BMI calculator by Khosrow Hafezi Motlagh")                                                  #نام گذاری فرم(بالا سمت راست فرم)
 main_form.config(bg="silver")
 
-weight_label = Label(text="Weight (kg):", font=("arial", font_size), width=11).grid(row=0, column=0)                    #ساخت لیبل وزن
-weight_entry = Entry(textvariable=weight_inp, bd=6, font=("arial", font_size),width=30).grid(row=0, column=1)           #ساخت اینتری وزن
+weight_label = Label(main_form ,text="Weight (kg):", font=("arial", font_size), width=11).grid(row=0, column=0)                    #ساخت لیبل وزن
+weight_entry = Entry(main_form ,textvariable=weight_inp, bd=6, font=("arial", font_size),width=30).grid(row=0, column=1)           #ساخت اینتری وزن
 
-heghit_label = Label(text="Height (m):", font=("arial", font_size), width=11).grid(row=1, column=0)                     #ساخت لیبل قد
-heghit_entry = Entry(textvariable=heghit_inp, bd=6, font=("arial", font_size),width=30).grid(row=1, column=1)           #ساخت اینتری قد
+heghit_label = Label(main_form ,text="Height (m):", font=("arial", font_size), width=11).grid(row=1, column=0)                     #ساخت لیبل قد
+heghit_entry = Entry(main_form ,textvariable=heghit_inp, bd=6, font=("arial", font_size),width=30).grid(row=1, column=1)           #ساخت اینتری قد
 
-result_label = Label(text="Bmi : ", bg="yellow", font=("arial", font_size))                                             #ساخت لیبل نتیجه
+result_label = Label(main_form ,text="Bmi : ", bg="yellow", font=("arial", font_size))                                             #ساخت لیبل نتیجه
 
-calculate_btn = Button(text="Calculate:", font=("arial", font_size),command=lambda: calculate(weight_inp, heghit_inp),bg="green",fg = "white", bd=6).grid(row=3, column=0, columnspan=2)    #ساخت دکمه محاسه
+calculate_btn = Button(main_form ,text="Calculate:", font=("arial", font_size),command=lambda: calculate(weight_inp, heghit_inp),bg="green",fg = "white", bd=6).grid(row=3, column=0, columnspan=2)    #ساخت دکمه محاسه
 
 result_label.grid(row=2, column=0, columnspan=2)                                                                        #جانمایی لیبل نتیجه
                                                                                                                         #جانمایی رو در آخر گذاشتیم چ.ت بعد از اعمل جانمایی نمیشه عناصر رو کانفیگ کرد
