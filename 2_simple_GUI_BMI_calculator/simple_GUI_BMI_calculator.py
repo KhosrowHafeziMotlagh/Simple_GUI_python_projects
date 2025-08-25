@@ -7,6 +7,10 @@ GUI : tkinter
 Training for : tkinter GUI , functions , lambda
 """
 
+"""
+فرمول bmi :
+bmi = (ghad / (wazn**2))
+"""
 
 from tkinter import *                                                                                                   #وارد کردن کتابخانه گرافیکی tkinter
 
