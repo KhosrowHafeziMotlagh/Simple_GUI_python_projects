@@ -23,7 +23,7 @@ from tkinter import ttk                                                         
 
 label_width = 18                                                                # تعریف یک متغیر برای طول لیبل ها
 border = 5                                                                      # تعریف یک متغیر برای حاشیه های عناصر
-font_size = 15                                                                  #تعریف یک متغیر برای انداره فونت ها
+font_size = 15                                                                  # تعریف یک متغیر برای انداره فونت ها
 
 def calculate():
     #تابع محسبه سود مرکب
@@ -42,10 +42,10 @@ main_form.config(bg='silver')                                                   
 main_form.title("simple_GUI_APR by Khosrow Hafezi Motlagh")                     # تنظیم تایتل برای فرم
 
 original_investment_inp = StringVar()                                           # تعریف متغیر برای دریافت سرمایه اولیه
-profit_percent_inp = StringVar()                                                #تعریف متغیر برای دریافت درصد سود
-year_of_investment_inp = StringVar()                                            #تعریف متغیر برای دریافت تعداد سال سرمایه گذاری
-profit_inp = StringVar()                                                        #تعریف متغیر برای نمایش میزان سود
-total_proprty_inp = StringVar()                                                 #تعریف متغیر برای نمایش کل دارایی
+profit_percent_inp = StringVar()                                                # تعریف متغیر برای دریافت درصد سود
+year_of_investment_inp = StringVar()                                            # تعریف متغیر برای دریافت تعداد سال سرمایه گذاری
+profit_inp = StringVar()                                                        # تعریف متغیر برای نمایش میزان سود
+total_proprty_inp = StringVar()                                                 # تعریف متغیر برای نمایش کل دارایی
 
 original_investment_label = Label(main_form, text='Original investment:',
                                   width=label_width,font = ("arial",font_size)).grid(row=0, column=0)
@@ -71,3 +71,4 @@ separator = ttk.Separator(main_form, orient=HORIZONTAL).grid(row=5, column=0, co
 caculate_btn = Button(main_form, text='Calculate', bd=border, command=lambda: calculate(),bg="lime",font=("",font_size)).grid(row=6, column=0, columnspan=2)
 
 main_form.mainloop()
+
